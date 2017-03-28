@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+    <link rel="stylesheet" href="{{ site.github.url }}/assets/bootstrap.min.css" />
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  </head>
+
+  <body>
+    <header class="text-center">
+      <h1><a href="#how-to" class="insite-nav text-default">Pi-Nocular Documentation</a></h1>
+      <p class="text-muted">
+        Get help from: <a href="mailto:pinocs@Bowen-dev.com">PiNocs@Bowen-dev.com</a>
+      </p>
+      
+      <ul id="site-nav" class="nav nav-tabs">
+        <li class="active"><a href="#how-to" class="insite-nav">How to use</a></li>
+        <li><a href="#add-video" class="insite-nav">Adding video</a></li>
+        <li><a href="#shutdown-instructions" class="insite-nav">Shutdown instructions</a></li>
+        <li><a href="#troubleshooting" class="insite-nav">Troubleshooting</a></li>
+        <li><a href="#dev-info" class="insite-nav">Developer info</a></li>
+      </ul>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      // Adjust all the closing times at one place!
+      var closingTime = '(5:25PM)';
+      var closingSpans = $('.closing-time');
+      closingSpans.append(closingTime);
+
+      // Hide all sections but first
+      var sections = $('section');
+      sections.slice(1).hide();
+
+      // OnClick show relevant section amd make link active
+      var navLinks = $('.insite-nav');
+      navLinks.click(function(e) {
+        e.preventDefault();
+        var hash = $(this).attr('href');
+        var linkIdentifier = '#site-nav a[href="' + hash + '"]';
+
+        navLinks.parent().removeClass('active');
+        sections.hide();
+        $(linkIdentifier).parent().addClass('active');
+        $(hash).show();
+      });
+    </script>
+  </body>
+
+</html>

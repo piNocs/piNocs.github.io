@@ -1,0 +1,33 @@
+<section id="shutdown-instructions">
+  <h2>Shutdown Instructions</h2>
+  <p>
+    Under the PiNoc's expected use, it can be shut down in two ways. Please follow one of these steps to safely shut down the device without corrupting the memory. <span class="text-danger">Do not unplug the Pi while the video is playing!</span>
+  </p>
+
+  <ul id="shutdown-directions">
+    <li class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Letting the Pi turn itself off</h3>
+      </div>
+      <p class="panel-body">
+        Wait until 25 minutes after <span class="closing-time">closing time</span> for the device to shut down on it's own. Look at the screen if you are uncertain. If the display is blue, it's safe to unplug it. If the video is playing, leave it alone for the night.
+      </p>
+    </li>
+
+    <li class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Manual shutdown</h3>
+      </div>
+      <div class="panel-body">
+          <p>
+            If you need to shut this down manually, plug a keyboard into one of the four USB ports on the left side of the Pi. The video will continue playing as if nothing happend and you won't be able to see what you are typing. Wait 3-5 seconds then type the following exactly as shown. <code>sudo shutdown -h now</code> Hit enter and the Pi will shutdown.
+          </p>
+
+          <p>
+            If this didn't work, wait 3-5 seconds, press <code>Ctrl + c</code>, then repeat these steps again.
+          </p>
+      </div>
+    </li>
+
+  </ul>
+</section>

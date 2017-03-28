@@ -1,0 +1,30 @@
+ <section id="dev-info">
+    <h2>Developer Info</h2>
+    
+    <h6>About the script</h6>
+    <p>
+        The script runs from <code>/etc/rc.local</code>. It consists of a few lines that run a loop on omxplayer.
+    </p>
+
+    <p>
+        The script shuts down the Pi at 5:25pm EST. The timezone must be set to Eastern Standard Time in <code>raspi-config</code>.
+    </p>
+
+    <p>
+        The video must be saved in <code>/home/pi</code> as <code>video.mp4</code>.
+    </p>
+
+    <h6>Accessing the Pi</h6>
+    <p>
+        The program runs off of rc.local for simplicity. To access the pi, you will need to <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/README.md">connect via SSH</a>. The Pi is already configured for this, just follow the directions in the link.
+    </p>
+
+    <p>
+        Once given access, enter <code>sudo nano /etc/rc.local</code>. Hash out the program I wrote and reboot. You can now play with the Pi!
+    </p>
+
+    <h6>Reinstalling the backup</h6>
+    <p>
+        If you need to reinstall the operating system and my program, <a href="mailto:pinocs@bowen-dev.com">get in touch with me</a>. You will need to plug the SD card into your computer and we will troubleshoot from there.
+    </p>
+</section>

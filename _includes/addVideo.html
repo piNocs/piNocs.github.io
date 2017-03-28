@@ -1,0 +1,61 @@
+<section id="add-video">
+  <h2>Adding a Video</h2>
+  <ul id="add-video-instructions">
+
+    <li class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Required Hardware</h3>
+      </div>
+      <div class="panel-body">
+        <ul id="hardware-list">
+          <li>Some way to connect the micro SD card to your computer</li>
+          <li>The micro SD card. Retrieve this from the right side of the Pi</li>
+          <li>The new video, on your computer, named <code>video.mp4</code> in all lowercase. The code won't work unless the video is named video.mp4</li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Moving the video to the SD card</h3>
+      </div>
+      <div class="panel-body">
+        <p class="text-danger">
+            Don't forget to eject the SD card before pulling it out!
+        </p>
+
+        <p>
+            <h6>Insert the SD card</h6>
+            Connect the Micro SD to your computer however you see fit. This behaves much like a USB drive. It will appear as if two drives were just inserted; we will be using <code>7.9 GB Volume</code>(not boot). Below is an image of what the folder's contents look like.
+        </p>
+        <img src="/static/sdRoot.png" alt="Image of the folder you are looking for" class='img-responsive'/>
+
+        <p>
+            <h6>Navigate to the /home/pi/ folder</h6>
+            After clicking on <code>7.9 GB Volume</code>, open the folder named <code>home</code>, then open the folder named <code>pi</code> you should see a file named video.mp4 here. If you want to leave this video on the Pi, rename it to anything but video.mp4. This is okay to do.
+        </p>
+
+        <p>
+            <h6>Paste the new video in the pi folder</h6>
+            Open a different window, find your folder, and copy the video. Go back to the <code>/home/pi</code> window and paste the video in this folder. Make sure the video is named <code>video.mp4</code> in all lowercase.
+        </p>
+      </div>
+    </li>
+
+    <li class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Safely eject the SD card</h3>
+      </div>
+      <div class="panel-body">
+        <p>
+          Eject <strong>both</strong> <code>boot</code> and <code>7.9 GB Volume</code>. You can do this one of two ways.
+          <ul>
+              <li>1. Left click each item name and select eject.</li>
+              <li>2. Hit the little up arrow next to each item.</li>
+          </ul>
+        </p>
+      </div>
+    </li>
+
+  </ul>
+</section>
