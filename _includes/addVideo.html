@@ -4,14 +4,16 @@
 
     <li class="panel panel-primary">
       <div class="panel-heading">
-        <h3 class="panel-title">Required Hardware</h3>
+        <h3 class="panel-title">The process</h3>
       </div>
       <div class="panel-body">
-        <ul id="hardware-list">
-          <li>Some way to connect the micro SD card to your computer</li>
-          <li>The micro SD card. Retrieve this from the right side of the Pi</li>
-          <li>The new video, on your computer, named <code>video.mp4</code> in all lowercase. The code won't work unless the video is named video.mp4</li>
-        </ul>
+        <p>
+          You will be inserting the SD card into your computer. On OSX and Windows, one partition called <code>boot</code> will appear. On linux, two partitions will appear.
+        </p>
+
+        <p>
+          The video will be loaded onto and played from the partition named <code>boot</code>.
+        </p>
       </div>
     </li>
 
@@ -26,18 +28,19 @@
 
         <p>
             <h6>Insert the SD card</h6>
-            Connect the Micro SD to your computer however you see fit. This behaves much like a USB drive. It will appear as if two drives were just inserted; we will be using <code>7.9 GB Volume</code>(not boot). Below is an image of what the folder's contents look like.
-        </p>
-        <img src="/static/sdRoot.png" alt="Image of the folder you are looking for" class='img-responsive'/>
-
-        <p>
-            <h6>Navigate to the /home/pi/ folder</h6>
-            After clicking on <code>7.9 GB Volume</code>, open the folder named <code>home</code>, then open the folder named <code>pi</code> you should see a file named video.mp4 here. If you want to leave this video on the Pi, rename it to anything but video.mp4. This is okay to do.
+            Connect the Micro SD to your computer however you see fit. This behaves much like a USB drive. A drive named <code>boot</code> will appear.
         </p>
 
         <p>
-            <h6>Paste the new video in the pi folder</h6>
-            Open a different window, find your folder, and copy the video. Go back to the <code>/home/pi</code> window and paste the video in this folder. Make sure the video is named <code>video.mp4</code> in all lowercase.
+            <h6>
+              The video is loaded directly into the <code>boot</code>
+            </h6>
+            After opening <code>boot</code> &mdash; if there is a video &mdash; rename it to anything but <code>video.mp4</code>.
+        </p>
+
+        <p>
+            <h6>Copy the new video in the boot directory</h6>
+            Open a different window, find your videos's folder, and copy the video. Go back to the <code>boot</code> window and paste the video in this folder. Make sure the video is named <code>video.mp4</code> in all lowercase.
         </p>
       </div>
     </li>
@@ -48,7 +51,7 @@
       </div>
       <div class="panel-body">
         <p>
-          Eject <strong>both</strong> <code>boot</code> and <code>7.9 GB Volume</code>. You can do this one of two ways.
+          Eject <code>boot</code> in one of two ways.
           <ul>
               <li>1. Left click each item name and select eject.</li>
               <li>2. Hit the little up arrow next to each item.</li>
