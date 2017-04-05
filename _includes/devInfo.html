@@ -1,30 +1,49 @@
  <section id="dev-info">
     <h2>Developer Info</h2>
-    
-    <h6>About the script</h6>
-    <p>
-        The script runs from <code>/etc/rc.local</code>. It consists of a few lines that run a loop on omxplayer.
-    </p>
+    <ul>
+     <li class="panel panel-primary">
+       <div class="panel-heading">
+         <h3 class="panel-title">About the script</h3>
+       </div>
+       <div class="panel-body">
+         <p>
+            The script runs from <code>/etc/rc.local</code>. It consists of a few lines that run a loop on omxplayer.
+         </p>
 
-    <p>
-        The script shuts down the Pi after nine hours of runtime.
-    </p>
+         <p>
+            The script shuts down the Pi after nine hours of runtime.
+         </p>
 
-    <p>
-        The video must be saved in the <code>boot</code> partition as <code>video.mp4</code>.
-    </p>
+         <p>
+            The video must be saved in the <code>boot</code> partition as <code>video.mp4</code>.
+         </p>
+       </div>
+     </li>
 
-    <h6>Accessing the Pi</h6>
-    <p>
-        The program runs off of rc.local for simplicity. To access the pi, you will need to <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/README.md">connect via SSH</a>. The Pi is already configured for this, just follow the directions in the link.
-    </p>
+     <li class="panel panel-primary">
+       <div class="panel-heading">
+         <h3 class="panel-title">Accessing the Pi</h3>
+       </div>
+       <div class="panel-body">
+         <p>
+             The program runs off of rc.local for simplicity. To access the pi, you will need to <a href="https://www.raspberrypi.org/documentation/remote-access/ssh/README.md">connect via SSH</a>. The Pi is already configured for this, just follow the directions in the link.
+         </p>
 
-    <p>
-        Once given access, enter <code>sudo nano /etc/rc.local</code>. Hash out the program I wrote and reboot. You can now play with the Pi!
-    </p>
-
-    <h6>Reinstalling the backup</h6>
-    <p>
-        If you need to reinstall the operating system and my program, <a href="mailto:pinocs@bowen-dev.com">get in touch with me</a>. You will need to remove the SD card from the Pi and we will troubleshoot from there.
-    </p>
+         <p>
+             Once given access, enter <code>sudo nano /etc/rc.local</code>. Hash out the program I wrote and reboot. You can now play with the Pi!
+         </p>
+       </div>
+     </li>
+     
+     <li class="panel panel-primary">
+       <div class="panel-heading">
+         <h3 class="panel-title">Reinstalling the backup</h3>
+       </div>
+       <div class="panel-body">
+         <p>
+             If you need to reinstall the operating system and my program, <a href="mailto:pinocs@bowen-dev.com">get in touch with me</a>. You will need to remove the SD card from the Pi and we will troubleshoot from there.
+         </p>
+       </div>
+     </li>
+  </ul>
 </section>
